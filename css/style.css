@@ -5703,7 +5703,8 @@ header .header-menu {
         color: #fff;
         font-weight: bolder; }
         .welcome-screen .text-welcome p a:hover {
-          background-color: #d67118; }
+          background-color: #d67118;
+          opacity: 1; }
 
 .about .about-title h2 {
   font-size: 3em; }
@@ -5716,8 +5717,10 @@ header .header-menu {
 
 .what-do {
   background-color: #2c3e50;
+  border-bottom: solid 5px #5f8dd3;
+  border-top: solid 5px #5f8dd3;
   color: #ffffff;
-  margin: 18px 0; }
+  margin: 18px 0 0 0; }
   .what-do h2 {
     margin-bottom: 36px; }
   .what-do .what-do-section img {
@@ -5729,8 +5732,26 @@ header .header-menu {
     text-align: center; }
 
 /* Global */
+.works {
+  background-image: url(../img/laptop.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  .works .title {
+    color: #ffffff;
+    margin-bottom: 18px; }
+
+.thumbnail {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+  margin-bottom: 0; }
+
 img {
   max-width: 100%; }
+
+.thumbnail a > img, .thumbnail > img {
+  width: 100%; }
 
 a {
   -webkit-transition: all 150ms ease;
@@ -5739,17 +5760,10 @@ a {
   -o-transition: all 150ms ease;
   transition: all 150ms ease; }
 
-a:hover {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-  /* IE 8 */
-  filter: alpha(opacity=50);
-  /* IE7 */
-  opacity: 0.6;
-  text-decoration: none; }
-
 .thumbnails li > .fff .caption {
-  background: #fff !important;
-  padding: 10px; }
+  background: rgba(0, 0, 0, 0.7) !important;
+  padding: 10px;
+  text-align: center; }
 
 /* Page Header */
 .page-header {
@@ -5770,10 +5784,21 @@ ul.thumbnails {
 
 /* Thumbnail Box */
 .caption h4 {
-  color: #444; }
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 2em; }
 
 .caption p {
-  color: #999; }
+  color: #ffffff; }
+
+.caption a {
+  background-color: #e67e22;
+  border-color: #d67118;
+  color: #fff;
+  font-weight: bolder; }
+  .caption a:hover {
+    background-color: #d67118;
+    opacity: 1; }
 
 /* Carousel Control */
 .control-box {
@@ -5832,8 +5857,6 @@ li {
       margin-top: 25%;
       transform: translateY(-50%); }
       .welcome-screen .text-welcome p a {
-        font-size: 2em; }
-        .welcome-screen .text-welcome p a:hover {
-          background-color: #d67118; } }
+        font-size: 2em; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -57,6 +57,7 @@ $dark-orange: #d67118;
 				font-weight: bolder;
 				&:hover{
 					background-color: $dark-orange;
+					opacity: 1;
 				}
 			}
 		}
@@ -82,8 +83,10 @@ $dark-orange: #d67118;
 
 .what-do {
 	background-color: $dark-blue;
+	border-bottom: solid 5px $main-blue;
+	border-top: solid 5px $main-blue;
 	color: #ffffff;
-	margin:18px 0;
+	margin:18px 0 0 0;
 
 	h2 {
 		margin-bottom: 36px; 
@@ -121,9 +124,6 @@ $dark-orange: #d67118;
 			p {
 				a {
 					font-size: 2em;
-					&:hover{
-						background-color: $dark-orange;
-					}
 				}
 			}
     	}

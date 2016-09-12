@@ -6,14 +6,6 @@ $(window).on("scroll", function() {
        $(".header").removeClass("active");
     }
 });
-$(window).on("scroll", function() {
-    if($(window).scrollTop() > 50) {
-        $(".header-menu").addClass("active");
-    } else {
-        //remove the background property so it comes transparent again (defined in your css)
-       $(".header-menu").removeClass("active");
-    }
-});
 
 
 $(document).ready(function () {
