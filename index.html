@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="colaboradores">
 <head>
 	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
 	<meta charset="UTF-8">
+	 <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16"> 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+	<script src="lib/angular-1.5.5/angular.js"></script>
+	<script src="js/app.js"></script>
 	<title>Sim-Network</title>
 </head>
 <body>
@@ -208,87 +211,22 @@
 		</div><!-- /.container -->
 	</section>
 
-	<section class="team">
+	<section class="team" ng-controller="colaboradoresCtrl">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 title">
-					<h2>Colaboradores <span>//Nossos integrantes</span></h2>
+					<h2>{{app}} <span>//Nossos integrantes</span></h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-6 col-md-3">
-				    <div class="thumbnail">
-				      <img src="img/Logo Sim Network 2.1.png" alt="...">
-				      <div class="caption">
-				        <h3 class="text-center">Thumbnail label</h3>
-				        <p class="text-center">Breve descrição sobre cada membro</p>
+				<div class="col-sm-6 col-md-3" ng-repeat="colaborador in colaboradores">
+					<div class="thumbnail">
+						<img ng-src="img/{{colaborador.imagem}}" title="foto de {{colaborador.nome}}" alt="foto de {{colaborador.nome}}" />
+						<div class="caption">
+							<h3 class="text-center">{{colaborador.nome}}</h3>
+							<p class="text-center">{{colaborador.descricao}}</p>
 						</div>
-				    </div>
-				</div>
-				<div class="col-sm-6 col-md-3">
-				    <div class="thumbnail">
-				      <img src="img/Logo Sim Network 2.1.png" alt="...">
-				      <div class="caption">
-				        <h3 class="text-center">Thumbnail label</h3>
-				        <p class="text-center">Breve descrição sobre cada membro</p>
-						</div>
-				    </div>
-				</div>
-				<div class="col-sm-6 col-md-3">
-				    <div class="thumbnail">
-				      <img src="img/Logo Sim Network 2.1.png" alt="...">
-				      <div class="caption">
-				        <h3 class="text-center">Thumbnail label</h3>
-				        <p class="text-center">Breve descrição sobre cada membro</p>
-						</div>
-				    </div>
-				</div>
-				<div class="col-sm-6 col-md-3">
-				    <div class="thumbnail">
-				      <img src="img/Logo Sim Network 2.1.png" alt="...">
-				      <div class="caption">
-				        <h3 class="text-center">Thumbnail label</h3>
-				        <p class="text-center">Breve descrição sobre cada membro</p>
-						</div>
-				    </div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-md-3">
-				    <div class="thumbnail">
-				      <img src="img/Logo Sim Network 2.1.png" alt="...">
-				      <div class="caption">
-				        <h3 class="text-center">Thumbnail label</h3>
-				        <p class="text-center">Breve descrição sobre cada membro</p>
-						</div>
-				    </div>
-				</div>
-				<div class="col-sm-6 col-md-3">
-				    <div class="thumbnail">
-				      <img src="img/Logo Sim Network 2.1.png" alt="...">
-				      <div class="caption">
-				        <h3 class="text-center">Thumbnail label</h3>
-				        <p class="text-center">Breve descrição sobre cada membro</p>
-						</div>
-				    </div>
-				</div>
-				<div class="col-sm-6 col-md-3">
-				    <div class="thumbnail">
-				      <img src="img/Logo Sim Network 2.1.png" alt="...">
-				      <div class="caption">
-				        <h3 class="text-center">Thumbnail label</h3>
-				        <p class="text-center">Breve descrição sobre cada membro</p>
-						</div>
-				    </div>
-				</div>
-				<div class="col-sm-6 col-md-3">
-				    <div class="thumbnail">
-				      <img src="img/Logo Sim Network 2.1.png" alt="...">
-				      <div class="caption">
-				        <h3 class="text-center">Thumbnail label</h3>
-				        <p class="text-center">Breve descrição sobre cada membro</p>
-						</div>
-				    </div>
+					</div>
 				</div>
 			</div>
 		</div>
