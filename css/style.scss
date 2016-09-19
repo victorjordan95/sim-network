@@ -112,6 +112,11 @@ $dark-orange: #d67118;
 
 .team {
 	margin: 36px 0;
+	.colaboradores{
+		.thumbnail {
+		    height: 550px;
+		}
+	}
 }
 
 .section-contact{

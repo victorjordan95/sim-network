@@ -5838,6 +5838,8 @@ li {
 
 .team {
   margin: 36px 0; }
+  .team .colaboradores .thumbnail {
+    height: 550px; }
 
 .section-contact {
   background-image: url(../img/map-contact1.png);
