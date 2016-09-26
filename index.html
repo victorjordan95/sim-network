@@ -15,6 +15,15 @@
 	<title>Sim-Network</title>
 </head>
 <body>
+<div id="fb-root"></div>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <header>
 	<nav class="navbar navbar-default navbar-fixed-top header" role="navigation">
@@ -83,27 +92,22 @@
 	</section>
 	
 	<a name="what-do"></a>
-	<section class="what-do">
+	<section class="what-do" ng-controller="servicesCtrl">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 title">
 					<h2> O que fazemos <span>//Nossa Especialidade</span></h2>
 				</div>
-				<div class="col-xs-12 col-md-4 what-do-section">
-					<img src="img/Logo Sim Network 2.1 - cir.png" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim finibus ullamcorper. Duis sit amet euismod velit, id imperdiet nisl.</p>
-				</div>
-				<div class="col-xs-12 col-md-4 what-do-section">
-					<img src="img/Logo Sim Network 2.1 - cir.png" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim finibus ullamcorper. Duis sit amet euismod velit, id imperdiet nisl.</p>
-				</div>
-				<div class="col-xs-12 col-md-4 what-do-section">
-					<img src="img/Logo Sim Network 2.1 - cir.png" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim finibus ullamcorper. Duis sit amet euismod velit, id imperdiet nisl.</p>
+				<div class="col-xs-12 col-md-4 what-do-section" ng-repeat="service in services">
+					<img ng-src="img/{{service.imagem}}" title="foto de {{service.title}}" alt="" />
+					<h2 class="text-center">{{service.title}}</h2>
+					<p class="text-center">{{service.description}}</p>
 				</div>
 			</div>
 		</div>
 	</section>
+
+
 
 	<a name="works"></a>
 	<section class="works">
@@ -214,7 +218,7 @@
 		</div><!-- /.container -->
 	</section>
 	
-	<a name="team"></a>
+	<!-- <a name="team"></a>
 	<section class="team" ng-controller="colaboradoresCtrl">
 		<div class="container">
 			<div class="row">
@@ -236,7 +240,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	
 	<a name="contact"></a>
 	<section class="section-contact">
@@ -280,12 +284,12 @@
 	<footer>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 footer">
-						<a href="https://www.facebook.com/victorjordan95"><p class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a href="https://github.com/victorjordan95"><i class="fa fa-github" aria-hidden="true"></i></a>
-						<a href="https://br.linkedin.com/in/victorjordan95"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-						<a href="https://www.behance.net/victorjordan95"><i class="fa fa-behance" aria-hidden="true"></i></a>
-						<p>Developed by Victor Jordan</p>
+					<div class="col-xs-6 footer">
+						<h1>Sim-Network</h1>
+						<p>texto sobre a sim</p>
+					</div>
+					<div class="col-xs-6">
+						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FIniciativaSimNetwork%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="190" style="border:none;overflow:hidden; float:right;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 					</div>
 				</div>
 			</div>
