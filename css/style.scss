@@ -99,7 +99,7 @@ $dark-orange: #d67118;
 		img {
 			margin-left: 50%;
 			transform: translateX(-50%);
-			width: 200px;
+			width: 250px;
 		}
 		p {
 			margin: 18px 0;
@@ -123,8 +123,8 @@ $dark-orange: #d67118;
 	background-image: url(../img/map-contact1.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin: 36px 0 0 0;
-
+	border-top: solid 5px $main-orange;
+	
 	h2, p, label {
 		color: #ffffff;
 	}

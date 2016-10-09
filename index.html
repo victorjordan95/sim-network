@@ -45,7 +45,7 @@
 	        <li><a href="#about" class="slide-menu header-menu">Sobre</a></li>
 	        <li><a href="#what-do" class="slide-menu header-menu">Nosso trabalho</a></li>
 	        <li><a href="#works" class="slide-menu header-menu">Projetos</a></li>
-	        <li><a href="#team" class="slide-menu header-menu">Colaboradores</a></li>
+	     <!--    <li><a href="#team" class="slide-menu header-menu">Colaboradores</a></li> -->
 	        <li><a href="#contact" class="slide-menu header-menu">Contato</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
@@ -253,47 +253,35 @@
 					<form action="https://formspree.io/victorjordan95@gmail.com" method="POST">
 						<div class="form-group">
 							<label for="inputName">Nome</label>
-							<input type="text" name="name" class="form-control" id="inputName" required placeholder="Your Name :D">
+							<input type="text" name="name" class="form-control" id="inputName" required placeholder="Digite seu Nome!">
 						</div>
 						<div class="form-group">
 							<label for="inputEmail">Email</label>
-							<input type="email" name="_replyto" class="form-control" id="inputEmail" required placeholder="Your E-mail">
+							<input type="email" name="_replyto" class="form-control" id="inputEmail" required placeholder="Seu E-mail">
 						</div>
 						<div class="form-group">
 							<label for="inputText">Mensagem</label>
-							<textarea type="text" name="text" class="form-control" id="inputText" required rows="3" placeholder="Say something (I don't give up on you, promisse!)"></textarea>
+							<textarea type="text" name="text" class="form-control" id="inputText" required rows="3" placeholder="Como podemos te ajudar?"></textarea>
 							<input type="hidden" name="_next" value="//victorjordan.surge.sh/thanks.html" />
 						</div>
-						<button type="submit" value="Send" class="btn btn-primary btn-lg btn-block">Send me the message!</button>
+						<button type="submit" value="Send" class="btn btn-primary btn-lg btn-block">Entrar em Contato!</button>
 					</form>
 				</div>
 				<div class="col-xs-12 col-md-6 contact-links">
 					<h2 class="name"><i class="fa fa-users" aria-hidden="true"></i> Iniciativa Sim-Network </h2>
 					<p>Juntos somos mais fortes!</p>
-					<h2 class="mail"><i class="fa fa-envelope" aria-hidden="true"></i> Nosso e-mail</h2>
+					<!-- <h2 class="mail"><i class="fa fa-envelope" aria-hidden="true"></i> Nosso e-mail</h2>
 					<p>email@email.com</p>
-					<p>email@email.com</p>
+					<p>email@email.com</p> -->
 					<h2 class="telephone"><i class="fa fa-phone" aria-hidden="true"></i> Nossos números </h2>
-					<p>(12) 33333-3333</p>
-					<p>(12) 33333-3333</p>
+					<p>(11) 96403-9340 </p>
+					<p>(12) 99664-9876</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-6 footer">
-						<h1>Sim-Network</h1>
-						<p>texto sobre a sim</p>
-					</div>
-					<div class="col-xs-6">
-						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FIniciativaSimNetwork%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="190" style="border:none;overflow:hidden; float:right;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-					</div>
-				</div>
-			</div>
-		</footer>
+	<footer ng-include="'footer.html'"></footer>
 </main>
 
 
