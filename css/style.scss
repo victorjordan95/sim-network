@@ -89,6 +89,7 @@ $dark-orange: #d67118;
 	border-top: solid 5px $main-blue;
 	color: #ffffff;
 	margin: 36px 0 0 0;
+	padding: 42px 0 0 0;
 
 	h2 {
 		margin-bottom: 36px; 
@@ -132,10 +133,21 @@ $dark-orange: #d67118;
 	.contact{
 		margin: 18px 0;
 	}
+	.form-control {
+		background-color: rgba(255, 255, 255, 0.25);
+		color: #ffffff;
+		font-weight: bolder;	    
+	}
+	.btn-block {
+	    float: right;
+	    width: 50%;
+	}
 }
 
 
 @import "footer";
+
+@import "cv";
 
 /* Layout para desktops: 769 px ate o maximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
 @media only screen and (min-width: 768px) {
