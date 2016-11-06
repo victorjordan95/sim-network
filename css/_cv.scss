@@ -22,7 +22,7 @@
     background-color: rgba(255, 255, 255, 1);
 }
 .card.hovercard .card-background {
-    height: 130px;
+    height: 150px;
 }
 .card-background img {
     -webkit-filter: blur(25px);
@@ -56,16 +56,17 @@
     left: 0;
     right: 0;
 }
-.card.hovercard .card-info .card-title {
+.card-title {
+    margin-top: 10px;
     padding:0 5px;
-    font-size: 20px;
+    font-size: 40px;
     line-height: 1;
-    color: #262626;
-    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
+
 .card.hovercard .card-info {
     overflow: hidden;
     font-size: 12px;
