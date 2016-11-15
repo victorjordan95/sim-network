@@ -187,6 +187,30 @@ $dark-orange: #d67118;
 
 .experience-cv {
 	background-color: $dark-blue;
+	padding: 36px 0;
+	h2, p {
+		color: #ffffff;
+	}
+	h2{
+		background-color: $main-blue;
+		border-radius: 5px;
+		padding: 0 5px;
+	}
+	.line-cv {
+		border-bottom: solid 3px #5F8DD3;
+		padding: 12px 0;
+	}
+}
+
+.experience-all{
+	color: #ffffff;
+	margin: 18px 0 0 0;
+	span{
+		background-color: $main-blue;
+		border-radius: 5px;
+		font-size: 14px;
+		padding: 0 10px;
+	}
 }
 
 /* Layout para desktops: 769 px ate o maximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
