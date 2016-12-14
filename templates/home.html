@@ -1,0 +1,239 @@
+<div ng-include="'components/header.html'"></div>
+
+    <section class="welcome-screen">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 text-welcome">
+                    <h3 class="text-center"> Bem-vindo a Iniciativa</h3>
+                    <h1 class="text-center">Sim Network</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a name="about"></a>
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 title">
+                    <h2> Sobre a Sim <span><strong>//Explicação Geral</strong></span></h2>
+                </div>
+                <div class="col-md-6 hidden-xs">
+                    <img src="img/coding.jpg" alt="">
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <h4>O que é?</h4>
+                    <p>É um conjunto de empresas e autônomos que se unem para trabalhar em um projeto em comum.</p>
+                    <h4>Por que Iniciativa Sim Network?</h4>
+                    <p><strong> Iniciativa: </strong> Iniciamos diversos projetos por conta própria. </p>
+                    <p><strong> Network: </strong> Nosso ponto forte esta exatamente na integração, organização e capacidade dos colaboradores na realização das tarefas propostas.</p>
+                    <p><strong> Sim: </strong> Graças ao nosso formato, quando um cliente nos pede um determinado serviço, nossa resposta será SIM.</p>
+                    <h4>Como funciona?</h4>
+                    <p>Uma empresa ou autônomo se ingressa na iniciativa cuidando somente de parte do processo, sem se sobrecarregar, enquanto que o cliente final recebe seu projeto após revisão de diversos profissionais. Garantindo qualidade e rapidez. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a name="what-do"></a>
+    <section class="what-do">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 title">
+                    <h2> O que fazemos <span><strong>//Nossa Especialidade</strong></span></h2>
+                </div>
+                <div class="col-xs-12 col-md-4 what-do-section" ng-repeat="service in services">
+                    <img ng-src="img/{{service.imagem}}" title="foto de {{service.title}}" alt="" />
+                    <h2 class="text-center">{{service.title}}</h2>
+                    <p class="text-center">{{service.description}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <a name="works"></a>
+    <section class="works">
+        <div class="container">
+            <div class="col-xs-12 title">
+                <h2>Trabalhos <span><strong>//Nossos Trabalhos</strong></span></h2>
+            </div>
+            <div class="col-xs-12">
+                <div class="carousel slide" id="myCarousel">
+                    <div class="carousel-inner ">
+                        <div class="item active">
+                            <ul class="thumbnails">
+                                <li class="col-sm-5">
+                                    <div class="fff">
+                                        <div class="thumbnail">
+                                            <a href="#"><img src="img/jobs/serafinabolos.png" alt="360" width="360"></a>
+                                        </div>
+                                        <div class="caption">
+                                            <h4>Serafina Bolos</h4>
+                                            <p>Site desenvolvido para a loja de bolos Serafina Bolos!</p>
+                                            <a class="btn btn-primary" href="http://serafinabolos.surge.sh">» Veja o site!</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-2"></li>
+                                <li class="col-sm-5 hidden-xs">
+                                    <div class="fff">
+                                        <div class="thumbnail">
+                                            <a href="#"><img src="img/jobs/logo_v1.png" alt=""></a>
+                                        </div>
+                                        <div class="caption">
+                                            <h4>Epic Day</h4>
+                                            <p>Logo desenvolvido para Epic Day!</p>
+                                            <!-- <a class="btn btn-primary" href="#">» Read More</a> -->
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="item">
+							<ul class="thumbnails">
+								<li class="col-sm-5">
+									<div class="fff">
+										<div class="thumbnail">
+											<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+										</div>
+										<div class="caption">
+											<h4>Praesent commodo</h4>
+											<p>Nullam Condimentum Nibh Etiam Sem</p>
+											<a class="btn btn-primary" href="#">» Read More</a>
+										</div>
+									</div>
+								</li>
+								<li class="col-sm-2"></li>
+								<li class="col-sm-5 hidden-xs">
+									<div class="fff">
+										<div class="thumbnail">
+											<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+										</div>
+										<div class="caption">
+											<h4>Praesent commodo</h4>
+											<p>Nullam Condimentum Nibh Etiam Sem</p>
+											<a class="btn btn-primary" href="#">» Read More</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="item">
+							<ul class="thumbnails">
+								<li class="col-sm-5">
+									<div class="fff">
+										<div class="thumbnail">
+											<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+										</div>
+										<div class="caption">
+											<h4>Praesent commodo</h4>
+											<p>Nullam Condimentum Nibh Etiam Sem</p>
+											<a class="btn btn-primary" href="#">» Read More</a>
+										</div>
+									</div>
+								</li>
+								<li class="col-sm-2"></li>
+								<li class="col-sm-5 hidden-xs">
+									<div class="fff">
+										<div class="thumbnail">
+											<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+										</div>
+										<div class="caption">
+											<h4>Praesent commodo</h4>
+											<p>Nullam Condimentum Nibh Etiam Sem</p>
+											<a class="btn btn-primary" href="#">» Read More</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<nav>
+						<ul class="control-box pager">
+							<li><a data-slide="prev" href="#myCarousel" class=""><i class="fa fa-arrow-left" aria-hidden="true"></i></a></li>
+							<li><a data-slide="next" href="#myCarousel" class=""><i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+						</ul>
+					</nav> -->
+                        <!-- /.control-box -->
+                    </div>
+                    <!-- /#myCarousel -->
+                </div>
+                <!-- /.col-xs-12 -->
+            </div>
+            <!-- /.container -->
+    </section>
+
+     <a name="team"></a>
+	<section class="team">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 title">
+					<h2>Colaboradores <span>//Conheça nossos integrantes</span></h2>
+					<div class="col-sm-6">
+                        <h4>Desenvolvedores Back-end</h4>
+                        <ul ng-repeat="colaborador in colaboradores">
+                            <li><a href="#/cv/{{colaborador.id}}">{{colaborador.nome}}</a></li>
+                        </ul>
+                        
+                    </div>
+				</div>
+			</div>
+			
+<!--
+			<div class="row">
+				<div class="col-sm-6 col-md-3 colaboradores" ng-repeat="colaborador in colaboradores">
+					<div class="thumbnail">
+						<img ng-src="img/colaboradores/{{colaborador.imagem}}" title="foto de {{colaborador.nome}}" alt="foto de {{colaborador.nome}}" />
+						<div class="caption">
+							<h2 class="text-center">{{colaborador.nome}}</h2>
+							<h4 class="text-center">{{colaborador.funcao}}</h4>
+							<p class="text-center description">{{colaborador.descricao}}</p> <br>
+							<p class="text-center"><a class="btn btn-primary" href="{{colaborador.link}}">Saiba mais sobre!</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+-->
+		</div>
+	</section> 
+
+    <a name="contact"></a>
+    <section class="section-contact">
+        <div class="container">
+            <div class="row contact">
+                <div class="col-xs-12 title">
+                    <h2>Contato <span><strong>//Envie sua mensagem!</strong></span></h2>
+                </div>
+                <div class="col-xs-12 col-md-6 contact-form">
+                    <form action="https://formspree.io/contato@simnetwork.com.br" method="POST">
+                        <div class="form-group">
+                            <label for="inputName">Nome</label>
+                            <input type="text" name="name" class="form-control" id="inputName" required placeholder="Digite seu Nome!">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" name="_replyto" class="form-control" id="inputEmail" required placeholder="Seu E-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputText">Mensagem</label>
+                            <textarea type="text" name="text" class="form-control" id="inputText" required rows="3" placeholder="Como podemos te ajudar?"></textarea>
+                            <!-- <input type="hidden" name="_next" value="//victorjordan.surge.sh/thanks.html" /> -->
+                        </div>
+                        <button type="submit" value="Send" class="btn btn-primary btn-lg btn-block">Entrar em Contato!</button>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-md-6 contact-links">
+                    <h2 class="name"><i class="fa fa-users" aria-hidden="true"></i> Iniciativa Sim Network </h2>
+                    <p>Juntos somos mais fortes!</p>
+                    <!-- <h2 class="mail"><i class="fa fa-envelope" aria-hidden="true"></i> Nosso e-mail</h2>
+					<p>email@email.com</p>
+					<p>email@email.com</p> -->
+                    <h2 class="telephone"><i class="fa fa-phone" aria-hidden="true"></i> Nossos números </h2>
+                    <p>(11) 96403-9340 </p>
+                    <p>(12) 99664-9876</p>
+                </div>
+            </div>
+        </div>
+    </section>

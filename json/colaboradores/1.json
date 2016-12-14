@@ -1,0 +1,38 @@
+[
+    {
+        "id": 2,
+        "nome": "Victor Jordan",
+        "funcao" : "Front-end / UX-Designer",
+        "aniversario" : "21/11/1995",
+        "facebook" : "fb.com/victorjordan95",
+        "telefone" : "(12) 98215-3860",
+        "email" : "victorjordan95@gmail.com",
+        "foto" : "victor-jordan", 
+        "descricaoPerfil" : "Desenvolvedor front-end, atualmente estagiário na FITec onde teve oportunidade de por em prática seus conhecimentos web em um novo projeto. Entusiasta em aprender coisas novas e tecnologias mais avançadas. Amante de design e user experience.",
+        "porcentagem1" : "95",
+        "porcentagem2" : "80",
+        "porcentagem3" : "70",
+        "porcentagem4" : "75",
+        "competencia1" : "HTML/CSS",
+        "competencia1" : "Bootstrap",
+        "competencia2" : "JavaScript",
+        "competencia3" : "Angular",
+        "competencia4" : "SASS",
+        "competencia5" : "JQuery",
+        "competencia6" : "Google Analytics",
+        "competencia7" : "Java/PHP",
+        "experiencia1" : "Estagiário - FITec",
+        "ano1" : "2015 - Atualmente", 
+        "descricao1"  : "Desenvolvimento web com MEAN, Jade, CoffeeScript, testes automatizados",
+        "experiencia2" : "Analista de Marketing Digital Jr - Guichê Virtual",
+        "ano2" : "2015 - 2016",
+        "descricao2" : "Análise de contas no Google Adwords, Bing. Criação de queries com SQL para análise de mercado, criação de template de email marketing",
+        "escolaridade1" : "Banco de Dados - Fatec",
+        "ano3" : "2014 - Atualmente",
+        "escolaDescricao" : "Faculdade tecnológica em banco de dados, com aulas de programação em Java, C, Python, programação web e banco de dados",
+        "ano4" : "2012 - 2013",
+        "escoladirade2" : "Ensino Médio Técnico em Informática - IDEIA",
+        "escolaDescricao2" : "Aulas de programação em PHP,Java, C++, Delhpi. Design em CorelDraw, Photoshop, Illustrator"
+        
+    }
+]
