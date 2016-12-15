@@ -252,87 +252,12 @@ footer {
 @media only screen and (min-width: 768px) {
   footer .facebook iframe {
     width: 70%; } }
-/* USER PROFILE PAGE */
-.card {
-  margin-top: 20px;
-  padding: 30px;
-  background-color: rgba(214, 224, 226, 0.2);
-  -webkit-border-top-left-radius: 5px;
-  -moz-border-top-left-radius: 5px;
-  border-top-left-radius: 5px;
-  -webkit-border-top-right-radius: 5px;
-  -moz-border-top-right-radius: 5px;
-  border-top-right-radius: 5px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.card.hovercard {
+.photo-xs img {
+  margin: 0 auto;
   position: relative;
-  padding-top: 0;
-  overflow: hidden;
-  text-align: center;
-  background-color: #fff;
-  background-color: white; }
-
-.card.hovercard .card-background {
-  height: 150px; }
-
-.card-background img {
-  -webkit-filter: blur(25px);
-  -moz-filter: blur(25px);
-  -o-filter: blur(25px);
-  -ms-filter: blur(25px);
-  filter: blur(25px);
-  margin-left: -100px;
-  margin-top: -200px;
-  min-width: 130%; }
-
-.card.hovercard .useravatar {
-  position: absolute;
-  top: 15px;
-  left: 0;
-  right: 0; }
-
-.card.hovercard .useravatar img {
-  width: 100px;
-  height: 100px;
-  max-width: 100px;
-  max-height: 100px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  border: 5px solid rgba(255, 255, 255, 0.5); }
-
-.card.hovercard .card-info {
-  position: absolute;
-  bottom: 14px;
-  left: 0;
-  right: 0; }
-
-.card-title {
-  margin-top: 10px;
-  padding: 0 5px;
-  font-size: 40px;
-  line-height: 1;
-  color: #ffffff;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px; }
-
-.card.hovercard .card-info {
-  overflow: hidden;
-  font-size: 12px;
-  line-height: 20px;
-  color: #737373;
-  text-overflow: ellipsis; }
-
-.card.hovercard .bottom {
-  padding: 0 20px;
-  margin-bottom: 17px; }
-
-.btn-pref .btn {
-  -webkit-border-radius: 0 !important; }
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px; }
 
 .header-cv {
   background-color: #ddd;
@@ -386,6 +311,20 @@ footer {
     font-size: 14px;
     padding: 0 10px; }
 
+/* Layout para desktops: 769 px ate o maximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
+@media only screen and (min-width: 768px) {
+  .welcome-screen {
+    background-color: black;
+    height: 800px; }
+    .welcome-screen h1 {
+      font-size: 6em; }
+    .welcome-screen h3 {
+      font-size: 3em; }
+    .welcome-screen .text-welcome {
+      margin-top: 25%;
+      transform: translateY(-50%); }
+      .welcome-screen .text-welcome p a {
+        font-size: 2em; } }
 /* Layout para desktops: 769 px ate o maximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
 @media only screen and (min-width: 768px) {
   .welcome-screen {
