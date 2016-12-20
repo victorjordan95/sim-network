@@ -1,0 +1,37 @@
+[
+    {
+        "id": 3,
+        "nome": "Kleber Ramos",
+        "funcao" : "Gerenciamento de Projetos",
+        "aniversario" : "15/03/1978",
+        "facebook" : "-",
+        "telefone" : "(12) 98178-9065",
+        "email" : "kleber.ramos@difusaogp.com.br",
+        "foto" : "kleber", 
+        "descricaoPerfil" : "Profissional com 14 anos de experiência nas áreas de engenharia de produto e aplicação, suporte a vendas e pós-vendas, e mais de 9 anos de experiência em gerenciamento de projetos internos e externos, de ambito nacional e internacional.",
+        "porcentagem1" : "100",
+        "porcentagem2" : "100",
+        "porcentagem3" : "100",
+        "porcentagem4" : "100",
+        "competencia1" : "Gerenciamento de Projetos",
+        "competencia2" : "Treinamentos Gestão de Projetos",
+        "competencia3" : "Consultoria em Eficiência Energética",
+        "competencia4" : "Professor de Gestão de Projetos",
+        "competencia5" : "MS Project",
+        "competencia6" : "Scrum",
+        "competencia7" : "PMBOK",
+        "experiencia1" : "Diretor Difusão GP – Treinamentos e Consultoria",
+        "ano1" : "2016 - Atualmente", 
+        "descricao1"  : "Treinamentos in company em gerenciamento de projetos. Consultoria e assessoria em gerenciamento de projetos, programas e portfólios a empresas. Palestras e assessoria a instituições educacionais",
+        "experiencia2" : "Gerente de Projetos - Voith Turbo Filial",
+        "ano2" : "2011 - 2015",
+        "descricao2" : "Gestão de projetos a clientes externos, base de contratos com restrições de custo, escopo e prazo. Interface com o cliente durante o ciclo de vida do projeto: solução de conflitos, mudanças de projeto, renegociação de condições contratuais, aditivos, relatórios e reuniões. Elaboração de indicadores e relatórios de desempenho, apresentação a diretoria.",
+        "escolaridade1" : "UNIFEI – Universidade Federal de Itajubá",
+        "ano3" : " 2002",
+        "escolaDescricao" : "Graduado em Engenharia de controle e automação",
+        "ano4" : "2006",
+        "escoladirade2" : "USP - Fundacao Vanzolini",
+        "escolaDescricao2" : "Pós Graduação em Administraçãoo Industrial"
+        
+    }
+]
