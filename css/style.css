@@ -1,8 +1,21 @@
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-Regular.ttf"); }
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("../fonts/Roboto/Roboto-Black.ttf"); }
 p {
-  font-size: 1em; }
+  font-size: 1em;
+  font-family: Roboto; }
+
+h1,
+h2 {
+  font-family: 'Roboto-Black', serif;
+  font-weight: bold; }
+
+p,
+a {
+  font-family: 'Roboto', sans-serif; }
 
 header .navbar-default {
   position: fixed;
@@ -66,7 +79,8 @@ header .header-menu {
   .welcome-screen .text-welcome {
     margin-top: 50px;
     padding: 100px 0; }
-    .welcome-screen .text-welcome h1, .welcome-screen .text-welcome h3 {
+    .welcome-screen .text-welcome h1,
+    .welcome-screen .text-welcome h3 {
       color: #ffffff;
       margin-bottom: 0px; }
     .welcome-screen .text-welcome p {
@@ -104,8 +118,7 @@ header .header-menu {
     margin-bottom: 36px; }
     .what-do .what-do-section img {
       margin-left: 50%;
-      transform: translateX(-50%);
-      width: 250px; }
+      transform: translateX(-50%); }
     .what-do .what-do-section p {
       margin: 18px 0;
       text-align: center; }
@@ -212,16 +225,61 @@ li {
   color: #FFFFFF; }
 
 .team {
-  margin: 36px 0; }
+  border-top: solid 4px #2c3e50; }
+  .team .title {
+    margin-bottom: 36px; }
   .team .colaboradores .thumbnail {
     height: 550px; }
+  .team .programadores,
+  .team .analistas,
+  .team .designers {
+    color: #ffffff;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    padding: 20px 0;
+    transition: filter 0.5s;
+    -webkit-transition: filter 0.5s;
+    /* Safari 3.1 to 6.0 */
+    margin-top: -30px; }
+    .team .programadores:hover,
+    .team .analistas:hover,
+    .team .designers:hover {
+      filter: none; }
+    .team .programadores .text-team h2,
+    .team .programadores .text-team p,
+    .team .analistas .text-team h2,
+    .team .analistas .text-team p,
+    .team .designers .text-team h2,
+    .team .designers .text-team p {
+      padding: 10px 0px 20px 0px; }
+    .team .programadores .text-team p,
+    .team .analistas .text-team p,
+    .team .designers .text-team p {
+      font-size: 18px; }
+    .team .programadores img,
+    .team .analistas img,
+    .team .designers img {
+      float: right; }
+  .team .programadores {
+    background-color: #5B6D83;
+    clip-path: polygon(0 10%, 100% 5px, 100% 100%, 0 95%); }
+  .team .designers {
+    background-color: #19B2B8;
+    clip-path: polygon(0% 100%, 100% 95%, 100% 0%, 0 0%); }
+  .team .analistas {
+    background-color: #F2F2F2;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 10%);
+    color: #474F59; }
 
 .section-contact {
   background-image: url(../img/map-contact1.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-top: solid 5px #e67e22; }
-  .section-contact h2, .section-contact p, .section-contact label {
+  .section-contact h2,
+  .section-contact p,
+  .section-contact label {
     color: #ffffff; }
   .section-contact .contact {
     margin: 18px 0; }
