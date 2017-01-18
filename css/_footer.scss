@@ -4,9 +4,9 @@ footer {
 	padding: 18px 0 18px 0;
 	width: 100%;
 	.social {
-	    i {
+		i {
 			font-size: 25px;
-		    padding: 0 5px;
+			padding: 0 5px;
 			margin: 0 auto;
 		}
 	}
@@ -16,23 +16,19 @@ footer {
 			color: #848484;
 		}
 	}
-	.facebook{
-		iframe{
+	.facebook {
+		iframe {
 			width: 100%;
 		}
 	}
 }
 
-
-
 @media only screen and (min-width: 768px) {
-
 	footer {
-		.facebook{
-			iframe{
+		.facebook {
+			iframe {
 				width: 70%;
 			}
 		}
 	}
-
 }
