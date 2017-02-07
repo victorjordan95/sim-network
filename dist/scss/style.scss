@@ -204,10 +204,12 @@ $dark-orange: #d67118;
     color: #ffffff;
     font-weight: bolder;
     float: right;
-    width: 50%;
+    transition: background-color 0.5s;
+    width: 100%;
     &:hover {
       background-color: $main-orange!important;
       border-color: transparent;
+      color: #ffffff;
     }
   }
 }
@@ -235,6 +237,11 @@ $dark-orange: #d67118;
           font-size: 2em;
         }
       }
+    }
+  }
+  .section-contact {
+    .btn-contact {
+      width: 50%;
     }
   }
 }
