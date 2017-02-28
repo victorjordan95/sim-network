@@ -1,0 +1,106 @@
+.photo-xs{
+    img{
+        margin: 0 auto;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 20px;
+        }
+}
+
+.header-cv{
+	background-color: #ddd;
+	padding: 0 0 18px 5%;
+	h1{
+		font-size: 50px;
+		font-weight: bold;
+	}
+	h1,h4{
+		color: $dark-blue;
+	}
+}
+
+.about-cv{
+	padding: 12px 0;
+	.title-cv{
+		background-color: $dark-blue;
+		border-radius: 5px;
+		color: #ffffff;
+		font-weight: bolder;
+		text-align: center;
+	}
+	.main-title-cv{
+		p{
+            font-size: 14px;
+			font-weight: bolder;
+		}
+	}
+    .info-member{
+        font-size: 14px;
+        padding: 5px 0 0 0;
+    }
+	.photo-section{
+		border-top: solid 5px $dark-blue;
+		margin-top: 30px;
+		padding: 30px 0;
+		.pic-photo-section {
+			border-right: solid 5px $dark-blue;
+		}
+	}
+}
+
+.experience-cv {
+	background-color: $dark-blue;
+	padding: 36px 0;
+	h2, p {
+		color: #ffffff;
+	}
+	h2{
+		background-color: $main-blue;
+		border-radius: 5px;
+		padding: 0 5px;
+	}
+	.line-cv {
+		border-bottom: solid 3px #5F8DD3;
+		padding: 12px 0;
+	}
+}
+
+.experience-all{
+	color: #ffffff;
+	margin: 18px 0 0 0;
+	span{
+		background-color: $main-blue;
+		border-radius: 5px;
+		font-size: 14px;
+		padding: 0 10px;
+	}
+}
+
+/* Layout para desktops: 769 px ate o maximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
+@media only screen and (min-width: 768px) {
+    .welcome-screen{
+    	background-color: black;
+    	height: 800px;
+    	h1{
+			font-size: 6em; 
+		}
+		h3{
+			font-size: 3em;
+		}
+    	.text-welcome{
+			margin-top: 25%;	
+			transform: translateY(-50%);
+			p {
+				a {
+					font-size: 2em;
+				}
+			}
+    	}
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+}

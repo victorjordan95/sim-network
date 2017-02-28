@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "nome": "Felipe Soares Casseb dos Santos",
+        "funcao" : "CEO e Gerente de Projetos",
+        "aniversario" : "31/10/1991",
+        "facebook" : "fb.com/felipe.casseb.up",
+        "telefone" : "(12)99664-­9876",
+        "email" : "felipe.casseb@gmail.com",
+        "foto" : "", 
+        "descricaoPerfil" : "Idealizador, fundador e mentor da Iniciativa SimNetwork, trabalha para criar produtos inovadores, desenvolvendo com criatividade soluções para os problemas do dia a dia.",
+        "porcentagem1" : "90",
+        "porcentagem2" : "70",
+        "porcentagem3" : "80",
+        "porcentagem4" : "90",
+        "competencia1" : "Criatividade",
+        "competencia2" : "Gestão de Projetos",
+        "competencia3" : "Liderança",
+        "competencia4" : "Didática",
+        "competencia5" : "Lógica de Programação",
+        "competencia6" : "Arte-Final",
+        "competencia7" : "Filosofia a Maneira Clássica",
+        "experiencia1" : "Analista de Desenvolvimento",
+        "ano1" : "2012 - Atualmente", 
+        "descricao1"  : " Atendimento a cliente, análise de sistemas, programação em html, css, javascipt, php e SQL onde foi desenvolvido um sistema web para uso interno. Experiência em Inkscape e gimp para montagem de layouts.",
+        "experiencia2" : "",
+        "ano2" : "",
+        "descricao2" : "",
+        "escolaridade1" : "Banco de Dados - Fatec",
+        "ano3" : "2015 - Atualmente",
+        "escolaDescricao" : "Faculdade tecnológica em banco de dados, com aulas de programação em Java, C, Python, programação web e banco de dados",
+        "ano4" : "2009 - 2010",
+        "escoladirade2" : "Técnico   de   Informática",
+        "escolaDescricao2" : " Lógica de Programação, Redes e Hardware. "
+        
+    }
+]
