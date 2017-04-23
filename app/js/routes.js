@@ -10,6 +10,6 @@ app.config(function ($routeProvider) {
 		, controller: 'mainController'
 	}).when("/termos", {
 		templateUrl: "templates/termos.html"
-		, controller: 'mainController'
+		, controller: 'TermosCtrl'
 	})
 });

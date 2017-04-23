@@ -19,3 +19,10 @@ app.controller('cvController', function ($scope, $http, $routeParams) {
 		$scope.colaboradores = response.data;
 	});
 });
+
+app.controller('TermosCtrl', function($scope, $http){
+  $http.get('http://api.myjson.com/bins/x7jzr').then(function(termos){
+    $scope.termos = termos.data;
+    console.log(termos);
+  });
+})
